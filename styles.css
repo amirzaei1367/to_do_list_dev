@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+#task-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item.completed {
+    background-color: #f8f9fa;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.delete-btn {
+    margin-left: 10px;
+}
+
+#auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#task-container {
+    max-width: 800px;
+    margin: 0 auto;
+} 
